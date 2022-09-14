@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&family=Manrope:wght@800&family=Satisfy&display=swap");
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  height: 42vh;
+  width: 32vw;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .advice-id-para,
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  margin-top: 55px;
+  letter-spacing: 4px;
+}
+
+.advice-container {
+  width: 80%;
+  height: 50%;
+  word-wrap: break-word;
+  margin-top: 35px;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+}
+
+.advice-btn {
+  height: 75px;
+  width: 75px;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -37px;
+  cursor: pointer;
+}
+
+.advice-btn:active {
+  box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+.advice:before,
+.advice:after {
+  content: '"';
+}
+
+.divider {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .divider {
+    width: 300px;
+    margin-bottom: 25px;
+  }
+
+  .advice-container {
+    width: 80%;
+    height: 50%;
+  }
+
+  .advice-id-para,
+  .advice-id {
+    margin-top: 5px;
+  }
+
+  .advice {
+    font-size: 20px;
+  }
+}
